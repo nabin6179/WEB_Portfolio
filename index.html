@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nabin Tiwari | Digital Identity</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home" class="logo">Nabin Tiwari</a>
+    <button id="menuBtn">Menu</button>
+    <ul id="navMenu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <h1>Nabin Tiwari</h1>
+    <p>Cybersecurity Student &mdash; Network Security &amp; Penetration Testing</p>
+    <p>BCS (Hons) Network Technology &amp; Cybersecurity student in Kathmandu, Nepal.
+       I build labs, practice ethical hacking, and document what I learn.</p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a 2nd-year Computer Science student studying Network Technology &amp; Cybersecurity
+       at Texas College of Management &amp; IT (Lincoln University College). I enjoy hands-on
+       labs &mdash; setting up Active Directory, configuring Snort IDS, and running full
+       penetration test engagements from recon to reporting. I also practice on TryHackMe and
+       PortSwigger Web Security Academy.</p>
+    <ul>
+      <li><strong>Location:</strong> Kathmandu, Nepal</li>
+      <li><strong>Focus:</strong> SOC Analysis, Penetration Testing, Network Security</li>
+      <li><strong>Education:</strong> BCS (Hons), Network Technology &amp; Cybersecurity</li>
+      <li><strong>Graduating:</strong> 2028</li>
+    </ul>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="alt">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Network Security</h3>
+        <p>Active Directory, network segmentation, Snort IDS, firewall configuration.</p>
+      </div>
+      <div class="card">
+        <h3>Penetration Testing</h3>
+        <p>Reconnaissance, vulnerability scanning, exploitation and reporting.</p>
+      </div>
+      <div class="card">
+        <h3>Web Security</h3>
+        <p>XSS, SQL injection and OWASP Top 10 fundamentals.</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p>Kali Linux, Wireshark, Nmap, Burp Suite, Git &amp; GitHub.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="network">Network Security</button>
+      <button class="filter-btn" data-filter="web">Web Security</button>
+      <button class="filter-btn" data-filter="pentest">Pentesting</button>
+    </div>
+
+    <div class="grid" id="projectGrid">
+      <div class="card project" data-category="network">
+        <span class="tag">Network Security</span>
+        <h3>Segmented Enterprise Network Lab</h3>
+        <p>Multi-VLAN network with Snort IDS for intrusion detection and alerting.</p>
+      </div>
+      <div class="card project" data-category="network">
+        <span class="tag">Network Security</span>
+        <h3>Active Directory Lab</h3>
+        <p>Windows Server 2022 Active Directory setup with GPOs and user management.</p>
+      </div>
+      <div class="card project" data-category="pentest">
+        <span class="tag">Pentesting</span>
+        <h3>Five-Phase Penetration Test</h3>
+        <p>Full engagement across a multi-host lab, from recon to final report.</p>
+      </div>
+      <div class="card project" data-category="web">
+        <span class="tag">Web Security</span>
+        <h3>Security Playground</h3>
+        <p>Browser-based CTF platform with XSS and SQLi practice labs.</p>
+      </div>
+      <div class="card project" data-category="web pentest">
+        <span class="tag">Web &middot; Pentest</span>
+        <h3>Bug Bounty Recon Script</h3>
+        <p>Bash script that automates recon for authorized bug bounty targets.</p>
+      </div>
+      <div class="card project" data-category="network">
+        <span class="tag">Network Security</span>
+        <h3>5G Network Strategy Report</h3>
+        <p>Report analyzing 5G rollout considerations for a telecom operator.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="alt">
+    <h2>Get in Touch</h2>
+    <p>Open to internship and entry-level roles in Security analysis, penetration testing and network security.</p>
+    <div class="links">
+      <a href="https://tiwarinabin.com.np" target="_blank" rel="noopener">Portfolio Site</a>
+      <a href="https://github.com/nabin6179" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:hello@tiwarinabin.com.np">Email Me</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Nabin Tiwari.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
